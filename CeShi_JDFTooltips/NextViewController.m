@@ -36,10 +36,7 @@
     
     [self.tooltipManager addTooltipWithTargetView:label2 hostView:self.view tooltipText:@"程序员不是你们眼中的程序猿-后IT时代。程序猿是一种非常特殊的、可以从事程序开发、维护的动物。一般分为程序设计猿和程序编码猿，但两者的界限并不非常清楚，都可以进行开发、维护工作，特别是在中国，而且最重要的一点，二者都是一种非常悲剧的存在。" arrowDirection:JDFTooltipViewArrowDirectionRight width:200.0f];
     
-    
     [self.tooltipManager addTooltipWithTargetView:label3 hostView:self.view tooltipText:@"身为一名程序媛,总结混迹于技术圈多年的经验可以概括成三要三不要。" arrowDirection:JDFTooltipViewArrowDirectionUp width:200.0f];
-    
-    [self.tooltipManager showNextTooltip];
 }
 
 - (UILabel *)createLabelWithFrame:(CGRect)frame title:(NSString *)title bgColor:(UIColor *)color{

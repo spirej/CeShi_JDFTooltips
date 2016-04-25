@@ -70,8 +70,15 @@
         show2 = NO;
     }
     if (!show1) {
-        tooltip1 = [[JDFTooltipView alloc] initWithTargetView:but1 hostView:self.view tooltipText:@"刚开始时我们会为写什么内容而烦恼" arrowDirection:JDFTooltipViewArrowDirectionDown width:100.0f];
+        tooltip1 = [[JDFTooltipView alloc] initWithTargetView:but1 hostView:self.view tooltipText:@"在投资期限内，每个月返还相同额度的利息，到期后返还最后一期利息和所有本金" arrowDirection:JDFTooltipViewArrowDirectionDown width:300.0f];
+        tooltip1.font = [UIFont systemFontOfSize:12];
+        tooltip1.textColour = [UIColor redColor];
+        tooltip1.arrowDirection = JDFTooltipViewArrowDirectionDown;
         tooltip1.dismissOnTouch = NO;
+        //是否有阴影
+        tooltip1.shadowEnabled = YES;
+        //阴影颜色
+        tooltip1.shadowColour = [UIColor redColor];
         [tooltip1 show];
         show1 = YES;
     }else{
@@ -86,7 +93,7 @@
         show1 = NO;
     }
     if (!show2) {
-        tooltip2 = [[JDFTooltipView alloc] initWithTargetPoint:CGPointMake(but2.frame.origin.x,but2.frame.origin.y+30) hostView:self.view tooltipText:@"SJDHSSDISDFDSFABCDE" arrowDirection:JDFTooltipViewArrowDirectionUp width:100.0f];
+        tooltip2 = [[JDFTooltipView alloc] initWithTargetPoint:CGPointMake(but2.frame.origin.x,but2.frame.origin.y+30) hostView:self.view tooltipText:@"在投资期限内，每个月返还相同额度的金额（包括部分本金和利息）" arrowDirection:JDFTooltipViewArrowDirectionUp width:400.0f];
         tooltip2.dismissOnTouch = NO;
         [tooltip2 show];
         show2 = YES;
