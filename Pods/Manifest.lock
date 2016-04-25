@@ -1,0 +1,10 @@
+PODS:
+  - JDFTooltips (1.1)
+
+DEPENDENCIES:
+  - JDFTooltips (~> 1.1)
+
+SPEC CHECKSUMS:
+  JDFTooltips: 72a825bdd8a323fb035d5a57c13e1298f5a8e256
+
+COCOAPODS: 0.39.0
